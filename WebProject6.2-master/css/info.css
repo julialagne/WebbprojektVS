@@ -22,21 +22,17 @@ section.container {
     padding: 10px 0;
     width: 100%;
 }
-
-.container > .asi {
+.container > .card {
     width: 45%;
     min-width: 200px;
     padding: 30px;
     flex-flow: row wrap;
 }
-
 .container img {
     display: block;
     max-width: 100%;
     box-shadow: 10px 10px 10px var(--main-bg-color);
 }
-
-
 .button{
     border:solid 1px var(--main-bg-color);
     background-color: var(--main-text-color);
@@ -49,30 +45,24 @@ section.container {
     transition: background-color 0.2s ease-out;
     cursor:pointer;
 }
-
 .button:hover{ 
     background-color: var(--main-bg-color);
     color: var(--main-text-color); 
+} 
+
+@media (max-width: 600px){
+.card p{
+    font-size: 10px;
 }
-    
-    @media (max-width: 600px)  
-    {
-        .asi p {
-            font-size: 10px;
-        }
-        
-        section.container h2 {
-            font-size: 12px;
-            text-align: start;
-        }
-        
-   .button {
-   padding: 5px 5px;
-   border-radius: 20%;
-  
-  }
-  a {
-      font-size: 12px;
-  }
-  
-    }
+section.container h2{
+    font-size: 12px;
+    text-align: start;
+}
+.button{
+    padding: 5px 5px;
+    border-radius: 20%;
+}
+a{
+    font-size: 12px;
+}
+}

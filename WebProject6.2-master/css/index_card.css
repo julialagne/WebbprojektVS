@@ -10,11 +10,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .card-container{
     display:flex;
     flex-flow:row wrap;
     justify-content: space-evenly;
-
 }
 
 .card img{
@@ -39,21 +39,24 @@ br{margin:5px}
 
 .button:hover{ 
   background-color: var(--main-bg-color);
-  color: var(--main-text-color); }
+  color: var(--main-text-color);
+}
 
 /* ---------------- Martin  --------------------------------------*/
-nav {
+nav{
    background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-size: 2.5rem;
     position: sticky;
     top: 0;
 }
-ul {
+
+ul{
     list-style: none;
     overflow: hidden;
 }
-.header li a.fa {
+
+.header li a.fa{
     float: right;
     color: var(--main-bg-color);
     text-decoration: none;
@@ -71,57 +74,51 @@ ul {
     width: 35vw;
     height: 35vw;
 }
+
 .buttons{
     display:flex;
     justify-content: space-between;
     align-items: center;    
     margin-bottom:3%;   /*minska dem från 10% till 3% annars täcker footern min text*/
 }
+
 .buttons button{
     padding:10px;  /*minska dem från 25px till 10px */
 }
 /*-------------------------------------------------------------*/
-
-
-
-        
-@media (max-width: 600px) { 
-
-
-    .card-container{
-        display:flex;
-        flex-flow:column wrap;
-        justify-content: center;
     
-    }
-
-    .card{
-        margin-bottom:10px;
-    }
-
-    .card img{
-        width:100vw;
-        margin:0px;
-    }
-
-    .card h2 {
-    font-size: 1.3rem;
+@media (max-width: 600px){
+.card-container{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
 }
     
-    .card h3{
+.card{
+     margin-bottom:10px;
+}
+.card img{
+    width:100vw;
+    margin:0px;
+}
+.card h2 {
+     font-size: 1.3rem;
+}
+.card h3{
     font-size: 0.9rem;
 }
-    p.info {
-    font-size: 0.7rem;
-}
-    .card1 p{
+
+p.info {
     font-size: 0.7rem;
 }
 
-  a{
-    font-size: 0.7rem;   
-   }
+.card1 p{
+    font-size: 0.7rem;
+}  
 
+a{
+    font-size: 0.7rem;
+}
 }
 
       
